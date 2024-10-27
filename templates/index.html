@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valorant Winner Predictor</title>
+</head>
+<body>
+    <h1>Enter Player IDs for Each Team</h1>
+    <form action="/predict" method="post">
+        <h2>Team 1</h2>
+        <input type="text" name="team1_ids[]" placeholder="Player ID 1" required><br>
+        <input type="text" name="team1_ids[]" placeholder="Player ID 2" required><br>
+        <input type="text" name="team1_ids[]" placeholder="Player ID 3" required><br>
+        <input type="text" name="team1_ids[]" placeholder="Player ID 4" required><br>
+        <input type="text" name="team1_ids[]" placeholder="Player ID 5" required><br>
+
+        <h2>Team 2</h2>
+        <input type="text" name="team2_ids[]" placeholder="Player ID 1" required><br>
+        <input type="text" name="team2_ids[]" placeholder="Player ID 2" required><br>
+        <input type="text" name="team2_ids[]" placeholder="Player ID 3" required><br>
+        <input type="text" name="team2_ids[]" placeholder="Player ID 4" required><br>
+        <input type="text" name="team2_ids[]" placeholder="Player ID 5" required><br>
+
+        <button type="submit">Predict Winner</button>
+    </form>
+    <p>SAMPLE IDs Team 1 Player IDs: ['3145', '2083', '8669', '14799', '19697'] Team 2 Player IDs: ['8179', '2124', '450', '14991', '7119'] </p>
+</body>
+</html>
