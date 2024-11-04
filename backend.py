@@ -1,5 +1,5 @@
 from flask import Flask, request, render_template
-from tensorflow.keras.models import load_model
+from tensorflow.keras.models import load_model # type: ignore
 import pandas as pd
 import numpy as np
 import sqlite3
